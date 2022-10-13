@@ -103,16 +103,40 @@ public class sidhanta {
           e += 1;
         }
         //point-10 do while loop in java
-        int f = 0;
+        int sid = 0;
         do {
-          System.out.println("oh ho sidhanta");
-          f += 1;
-        } while (f > 100);
-        // point-11 for loop in 
-        for (int h = 0 ; h < 20; h++){
-          System.out.println(h);
+          System.out.println(sid);
+          sid += 1;
+        } while (sid>2);
+       // point-11 for loop in java
+       for (int i = 0; i < 5; i+=2) { // use for loop when you familiar with the number of iteration
+        System.out.println("hi ");
+       }
+       // point-12 for each loop
+       for (int fe : numbers) {
+        System.out.println(fe);
+      }
+        // point-13 use of break and continue in java
+        // point-14 arrays (collection of values) ,just like list in python
+        int[]numbers = {2,4,6,8}; // single dimentional array
+        System.out.println(numbers[3]);
+        numbers[2] = 32;
+        System.out.println(numbers[2]);
+        // point-15 way to iterate an array
+        for (int mid = 0;mid<numbers.length; mid++) {
+          System.out.println(mid);
+          System.out.println(numbers[mid]);
         }
-        // point-12 use of break and continue in java
+        //point-16 2d array
+        int[][] result = {{11,22,3,44},{12,23,34,45}};
+        System.out.println(result[0][3]);
+        System.out.println(result[1][2]);
+        // try catch
+        try {
+          
+        } catch (Exception e) {
+          // TODO: handle exception
+        }
         }
 
     }
