@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
 import javax.sound.sampled.SourceDataLine;
+import javax.swing.undo.StateEdit;
 // point-1 its a comment and sidhanta is just a class
 public class sidhanta {
+  
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
     //  point-2 basic concepts in java
         System.out.println("sidhanta");
@@ -112,31 +117,46 @@ public class sidhanta {
        for (int i = 0; i < 5; i+=2) { // use for loop when you familiar with the number of iteration
         System.out.println("hi ");
        }
-       // point-12 for each loop
-       for (int fe : numbers) {
-        System.out.println(fe);
-      }
-        // point-13 use of break and continue in java
-        // point-14 arrays (collection of values) ,just like list in python
+       
+        // point-12 use of break and continue in java
+        // point-13 arrays (collection of values) ,just like list in python
         int[]numbers = {2,4,6,8}; // single dimentional array
         System.out.println(numbers[3]);
         numbers[2] = 32;
         System.out.println(numbers[2]);
+        // point-14 for each loop
+       for (int fe : numbers) {
+        System.out.println(fe);
+      }
         // point-15 way to iterate an array
         for (int mid = 0;mid<numbers.length; mid++) {
           System.out.println(mid);
           System.out.println(numbers[mid]);
         }
-        //point-16 2d array
+        //point-16 2d array , ......d array
         int[][] result = {{11,22,3,44},{12,23,34,45}};
         System.out.println(result[0][3]);
         System.out.println(result[1][2]);
-        // try catch
-        try {
-          
-        } catch (Exception e) {
-          // TODO: handle exception
-        }
+        //point-17 try catch
+       try {
+        System.out.println(result[4][3]);
+       } catch (Exception z) {
+        System.out.println(z);// TODO: handle exception
+       }
+       System.out.println("print this line");
+        // methods in java
+        // public class rough {
+        //   static int sum(int one , int two){
+        //       return one+two;
+        //   }
+        //       public static void main(String[] args) {
+        //           System.out.println("methods in java");
+        //           int ram = 44;
+        //           int vim = 68;
+        //           int tim = sum(ram,vim);
+        //           System.out.println(tim);
+        //       }
+        //   }
         }
 
     }
