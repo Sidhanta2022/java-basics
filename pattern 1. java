@@ -1,0 +1,33 @@
+package i;
+
+import java.util.Scanner;
+
+/**
+ * task
+ */
+public class pattern1 {
+
+    public static void main(String[] args) {
+        System.out.println("box");
+
+        System.out.print("Enter the value of column = ");
+        Scanner a = new Scanner(System.in);
+        int n = a.nextInt();
+        System.out.println("you entered " + n);
+
+        System.out.print("Enter the value of row = ");
+        Scanner b = new Scanner(System.in);
+        int m = b.nextInt();
+        System.out.println("you entered " + m);
+
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+                
+            }
+            System.out.println();
+
+            
+        }
+    }
+}
